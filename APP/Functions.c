@@ -19,6 +19,7 @@
 void congratulate1(char *student, char *language, char *programmer){
     // display as message to stdout
     printf("%s has done as much %s programming as %s. \n", student, language, programmer);
+    congratulate2(student,language,programmer);
 }
 
 // this function ues the strlen function in string.h
