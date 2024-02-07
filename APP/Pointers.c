@@ -158,5 +158,17 @@ int getPointerToIntBytes(void){
 
 void pointerToNull(void){
 
+    double *ptr;
+
+
+
+    ptr = NULL;
+
+
+    // get the address of the global variable i 
+    // and store it in the pointer
+    // the ampersand is needed when getting the address
+    // of a variable
+    ptr = &j;
 
 }

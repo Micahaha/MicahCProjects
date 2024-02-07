@@ -6,6 +6,7 @@
 #include "Loops.c"
 #include "Functions.c"
 #include "Pointers.c"
+#include "PassByRef.c"
 
 int main(void){
     /* BasicIo */
@@ -41,7 +42,7 @@ int main(void){
    // printf("%.1f degrees celsius = %.1f degrees fahrenheit. \n", 100.0, fahrenheitFromCelsius(100.0));
 
     /* Pointers */
-    printAddress();
+   /*  printAddress();
     printf("The global variable i stores its value at memory location %p.\n", getAddress());
     printf("The global variable i stores its value %d.\n", getDataAtAddress());
     printf("The gloal variable j now stores the value %.2f.\n", storeDataAddress());
@@ -49,5 +50,17 @@ int main(void){
     printf("The size of the pointer in the global variable j is %d bytes. \n", getPointerToDoubleBytes());
     printf("The size of the value in the global variable i is %d bytes. \n", getIntBytes());
     printf("The size of the pointer in the global variable i is %d bytes. \n", getPointerToIntBytes());
+    pointerToNull();
+ */
+
+    /* Pass By Reference */
+    // declare and initialize variables for (x,y) point
+    double x = 3.0;
+    double y = 4.0;
+
+    // must use the ampersand to use an address of a variale 
+    cartesianToPolar(x,y, &radius, &theta);
+    printf("(%.2f, %.2f) equals (%.2f, %.2f)\n", x, y, radius, theta);
+
 
 }
